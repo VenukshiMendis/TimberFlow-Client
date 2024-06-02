@@ -1,0 +1,80 @@
+/*--------head------------*/
+.head {
+  padding: 10px 0px;
+  color: #000000;
+  margin: 10px 0px;
+}
+.logo h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+.head .icon {
+  margin-left: 0px;
+}
+/*--------head------------*/
+/*--------header------------*/
+header {
+  margin: 0 20px;
+}
+header .nav {
+  display: flex !important;
+}
+header li {
+  margin-right: 40px;
+}
+header ul {
+  padding: 10px 10px;
+}
+header ul li a {
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s;
+  padding: 10px 10px;
+  background-color: #7d8d9c;
+}
+header ul li a:hover {
+  color:#1eb2a6;
+}
+.start {
+  background-color: #1eb2a6;
+  padding: 30px 70px;
+  color: #fff;
+  clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+.toggle {
+  display: none;
+}
+/*--------header------------*/
+@media screen and (max-width: 768px) {
+  .start {
+    clip-path: none;
+  }
+  header {
+    margin: 0;
+    background-color: #1eb2a6;
+    position: relative;
+  }
+  header ul.flexSB {
+    display: none;
+  }
+  header ul li {
+    margin-bottom: 20px;
+    
+  }
+  .toggle {
+    display: block;
+    background: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: -20px;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 7vh;
+    left: 0;
+    width: 100%;
+    background-color: #1eb2a6;
+  }
+}
